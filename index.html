@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="bn">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A simple HTML starter project powered by Tailwind CSS." />
+  <title>Diamond Beverages (P) Limited (DBPL)</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    window.tailwind = window.tailwind || {};
+    window.tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#FE231F",
+          },
+          fontFamily: {
+            heading: ['"Barlow Condensed"', "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+
+</head>
+
+<body id="top">
+
+  <nav class="absolute top-4 lg:top-10 left-1/2 -translate-x-1/2 z-40 w-full px-4 lg:px-0 lg:max-w-7xl">
+    <div class="bg-white rounded-full px-4 lg:px-10">
+      <div class="flex items-center justify-between lg:h-20 h-16">
+        <div class="flex justify-between items-center w-full lg:w-auto">          
+          <div class="flex items-center gap-4">
+            <img src="assets/images/logo.png" class="h-8 lg:h-10" alt="Diamond Beverages Logo">
+            <div class="h-10 border-l border-gray-300"></div>
+            <img src="assets/images/Coca-Cola_logo.png" class="h-8 lg:h-10" alt="Coca-Cola Logo">
+          </div>
+          <button id="mobile-menu-open" class="lg:hidden text-gray-600 hover:text-gray-900 focus:outline-none px-2 py-1 rounded-full bg-gray-100"
+            aria-label="Open Menu">
+            <i class="bx bx-menu text-2xl"></i>
+          </button>
+        </div>
+
+        <div class="hidden lg:flex items-center space-x-8 h-full">
+          <a href="index.html" class="text-black hover:text-primary font-medium transition uppercase">Home</a>
+          <div class="group h-full flex items-center">
+            <button
+              class="flex items-center gap-1 text-black group-hover:text-primary font-medium h-full cursor-pointer uppercase">
+              About Us
+              <svg class="w-3 h-3 transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div
+              class="w-[240px] absolute top-20 left-50 bg-white/90 backdrop-blur-sm shadow-xl opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-200 z-50">
+              <div class="p-4 px-6">
+                <ul class="gap-4 flex flex-col">
+                  <li><a href="#" class="block text-sm text-black hover:text-primary">Company Profile</a>
+                  </li>
+                  <li><a href="#" class="block text-sm text-black hover:text-primary">Our Vision And Values</a>
+                  </li>
+                  <li><a href="#" class="block text-sm text-black hover:text-primary">How We Execute</a></li>
+                  <li><a href="#" class="block text-sm text-black hover:text-primary">Environment Management</a></li>
+                  <li><a href="#" class="block text-sm text-black hover:text-primary">Our Team</a></li>
+                  <li><a href="#" class="block text-sm text-black hover:text-primary">Our Milestones</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="group h-full flex items-center">
+            <button
+              class="flex items-center gap-1 text-black group-hover:text-primary font-medium h-full cursor-pointer uppercase">
+              Products
+              <svg class="w-3 h-3 transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="w-[240px] absolute top-20 left-50 bg-white/90 backdrop-blur-sm shadow-xl opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-200 z-50">
+              <div class="p-4 px-6">
+                <ul class="gap-4 flex flex-col">
+                  <li><a href="#" class="block text-sm text-black hover:text-primary">Carbonated Soft Drinks</a></li>
+                  <li><a href="#" class="block text-sm text-black hover:text-primary">Juices</a></li>
+                  <li><a href="#" class="block text-sm text-black hover:text-primary">Water</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <a href="index.html" class="text-black hover:text-primary font-medium transition uppercase">Sustainability</a>
+          <a href="index.html" class="text-black hover:text-primary font-medium transition uppercase">Events</a>
+          <a href="index.html" class="text-black hover:text-primary font-medium transition uppercase">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div id="mobile-sidebar" class="fixed inset-0 z-50 invisible transition-all duration-300" role="dialog"
+    aria-modal="true">
+    <div id="mobile-backdrop" class="fixed inset-0 bg-gray-900/50 opacity-0 transition-opacity duration-300"></div>
+    <div id="sidebar-panel"
+      class="fixed inset-y-0 left-0 w-full max-w-xs bg-white shadow-2xl p-4 flex flex-col justify-between -translate-x-full transition-transform duration-300 ease-in-out">
+      <div>
+        <div class="flex items-center justify-between pb-4 border-b border-gray-100">
+          <a href="#" class="text-xl font-bold text-indigo-600"><img src="assets/images/logo.png" class="w-32"
+              alt=""></a>
+          <button id="mobile-menu-close" class="text-gray-500 hover:text-gray-800 p-1" aria-label="Close Menu">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="mt-6 space-y-4">
+          <a href="#" class="block text-base font-semibold text-gray-900 hover:text-primary">Home</a>
+          <div>
+            <button class="mobile-mega-toggle w-full flex items-center justify-between text-base font-semibold text-gray-900 hover:text-primary cursor-pointer">
+              About Us
+              <svg id="accordion-arrow" class="w-4 h-4 transition-transform duration-200" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <ul class="mobile-mega-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out pl-2 space-y-2">
+              <li><a href="#" class="block text-xs text-black hover:text-primary font-medium">Company Profile</a></li>
+              <li><a href="#" class="block text-xs text-black hover:text-primary font-medium">Our Vision And Values</a></li>
+              <li><a href="#" class="block text-xs text-black hover:text-primary font-medium">How We Execute</a></li>
+              <li><a href="#" class="block text-xs text-black hover:text-primary font-medium">Environment Management</a></li>
+              <li><a href="#" class="block text-xs text-black hover:text-primary font-medium">Our Team</a></li>
+              <li><a href="#" class="block text-xs text-black hover:text-primary font-medium">Our Milestones</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <button class="mobile-mega-toggle w-full flex items-center justify-between text-base font-semibold text-gray-900 hover:text-primary cursor-pointer">
+              Products
+              <svg id="accordion-arrow" class="w-4 h-4 transition-transform duration-200" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <ul class="mobile-mega-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out pl-2 space-y-2">
+              <li><a href="#" class="block text-xs text-black hover:text-primary font-medium">Company Profile</a></li>
+              <li><a href="#" class="block text-xs text-black hover:text-primary font-medium">Our Vision And Values</a></li>
+              <li><a href="#" class="block text-xs text-black hover:text-primary font-medium">How We Execute</a></li>
+              <li><a href="#" class="block text-xs text-black hover:text-primary font-medium">Environment Management</a></li>
+              <li><a href="#" class="block text-xs text-black hover:text-primary font-medium">Our Team</a></li>
+              <li><a href="#" class="block text-xs text-black hover:text-primary font-medium">Our Milestones</a></li>
+            </ul>
+          </div>
+
+          <a href="#" class="block text-base font-semibold text-gray-900 hover:text-primary">Sustainability</a>
+
+          <a href="#" class="block text-base font-semibold text-gray-900 hover:text-primary">Events</a>
+
+          <a href="#" class="block text-base font-semibold text-gray-900 hover:text-primary">Contact Us</a>
+          
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <main>
+    <!-- Slider Section -->
+    <section>
+      <div class="dbpl-slider">
+        <div class="dbpl-slide">
+          <img src="assets/images/slider.webp" alt="Coca-Cola bottle with the message Stay Refreshed"
+            fetchpriority="high" />
+        </div>
+        <div class="dbpl-slide">
+          <img src="assets/images/slider2.webp" alt="Monochrome Coca-Cola bottle with the message Stay Refreshed"
+            loading="lazy" />
+        </div>
+      </div>
+    </section>
+    <!-- // Slider Section -->
+
+    <!-- About Section -->
+    <section id="about" class="journey-section px-4 py-16 lg:py-24 lg:px-0">
+      <div class="mx-auto max-w-7xl">
+        <div class="grid items-center gap-10 md:grid-cols-[1.2fr_0.8fr] lg:gap-16">
+          <div>
+            <h2
+              class="font-heading bg-gradient-to-b from-gray-500 to-primary bg-clip-text text-3xl font-semibold uppercase text-transparent sm:text-4xl lg:text-6xl">
+              Our Journey
+            </h2>
+            <p class="mt-4 text-black lg:text-2xl font-light">
+              We are one of the leading bottling partners of The Coca-Cola Company in Kolkata.
+              Founded in 1993, Diamond Beverages (P) Limited (DBPL) has maintained an
+              indomitable market position ever since, now trusted by thousands of retailers
+              and distributors in the city. We are involved in all aspects of beverage
+              bottling, which include manufacturing, packaging, and distribution.
+            </p>
+            <a class="mt-6 inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 font-heading font-medium uppercase text-white transition hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              href="#journey-stats">
+              Read More <i class="bx bx-right-arrow-alt text-base" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="journey-image">
+            <img src="assets/images/about_img.jpg" alt="Coca-Cola bottle surrounded by a refreshing splash"
+              loading="lazy" />
+          </div>
+        </div>
+
+        <div id="journey-stats" class="mt-12 grid grid-cols-2 gap-x-6 gap-y-8 text-center sm:mt-14 md:grid-cols-4">
+          <div>
+            <p class="font-heading text-4xl font-bold tracking-wide text-slate-950 sm:text-5xl lg:text-7xl">
+              +<span data-counter="26">26</span><span class="text-2xl lg:text-3xl">Y</span>
+            </p>
+            <p class="mt-2 text-slate-700">Years Experience</p>
+          </div>
+          <div>
+            <p class="font-heading text-4xl font-extrabold tracking-wide text-slate-950 sm:text-5xl lg:text-7xl">
+              +<span data-counter="36">36</span><span class="text-2xl lg:text-3xl">K</span>
+            </p>
+            <p class="mt-2 text-slate-700">Customers Reached</p>
+          </div>
+          <div>
+            <p class="font-heading text-4xl font-extrabold tracking-wide text-slate-950 sm:text-5xl lg:text-7xl">
+              +<span data-counter="99">99</span><span class="text-2xl lg:text-3xl">%</span>
+            </p>
+            <p class="mt-2 text-slate-700">Online Support</p>
+          </div>
+          <div>
+            <p class="font-heading text-4xl font-extrabold tracking-wide text-slate-950 sm:text-5xl lg:text-7xl">
+              <span data-counter="4.8" data-decimals="1">4.8</span><span class="text-2xl lg:text-3xl">/5</span>
+            </p>
+            <p class="mt-2 text-slate-700">
+              Customer Satisfaction Rating
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // End About Section -->
+
+    <!-- Our Values -->
+    <section class="values-section px-4 pt-16 lg:pt-24 lg:px-0 bg-gradient-to-b from-[#383838] to-black">
+      <div class="mx-auto max-w-5xl text-center text-white space-y-4">
+        <h2
+          class="font-heading bg-gradient-to-b from-white to-primary bg-clip-text text-3xl font-semibold uppercase text-transparent sm:text-4xl lg:text-6xl">
+          Our Values
+        </h2>
+        <h3 class="text-2xl font-semibold uppercase">
+          Driven by purpose. Defined by trust. Delivered with excellence.
+        </h3>
+        <p class="text-xl font-light">At DBPL, our values guide every bottle we produce, every relationship we build,
+          and every community we serve. They keep us focused on quality, responsibility, and meaningful progress.</p>
+      </div>
+      <div class="max-w-6xl mx-auto">
+        <div class="value-bottles-grid">
+          <article class="value-bottle-card" tabindex="0">
+            <div class="value-bottle">
+              <img class="value-bottle__image" src="assets/images/bottle.png" alt="" aria-hidden="true" />
+              <div class="value-bottle__label">
+                <span class="value-bottle__mark" aria-hidden="true">D</span>
+                <h4>Deliver with excellence</h4>
+                <p>We maintain high standards in quality, service, and every delivery.</p>
+              </div>
+            </div>
+          </article>
+          <article class="value-bottle-card" tabindex="0">
+            <div class="value-bottle">
+              <img class="value-bottle__image" src="assets/images/bottle.png" alt="" aria-hidden="true" />
+              <div class="value-bottle__label">
+                <span class="value-bottle__mark" aria-hidden="true">B</span>
+                <h4>Build Trust</h4>
+                <p>We act with integrity, transparency, and accountability in all our actions.</p>
+              </div>
+            </div>
+          </article>
+          <article class="value-bottle-card" tabindex="0">
+            <div class="value-bottle">
+              <img class="value-bottle__image" src="assets/images/bottle.png" alt="" aria-hidden="true" />
+              <div class="value-bottle__label">
+                <span class="value-bottle__mark" aria-hidden="true">P</span>
+                <h4>Progress</h4>
+                <p>We embrace innovation and continuous improvement to stay ahead in the industry.</p>
+              </div>
+            </div>
+          </article>
+          <article class="value-bottle-card" tabindex="0">
+            <div class="value-bottle">
+              <img class="value-bottle__image" src="assets/images/bottle.png" alt="" aria-hidden="true" />
+              <div class="value-bottle__label">
+                <span class="value-bottle__mark" aria-hidden="true">L</span>
+                <h4>Lead together</h4>
+                <p>We foster collaboration and teamwork to achieve shared goals and success.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- // Our Values -->
+
+    <!-- Our Impact -->
+    <section class="impact-section bg-white px-4 py-16 sm:px-6 lg:px-0 lg:py-24">
+      <div class="mx-auto max-w-7xl">
+        <header class="mx-auto max-w-5xl text-center space-y-4">
+          <h2
+            class="font-heading bg-gradient-to-b from-gray-500 to-primary bg-clip-text text-4xl font-semibold uppercase text-transparent sm:text-5xl lg:text-6xl">
+            Our Impact
+          </h2>
+          <h3 class="text-lg font-bold uppercase text-slate-900 sm:text-xl">
+            Sustainability: A business priority
+          </h3>
+          <p class="text-xl font-light">
+            Environment and Sustainability forms core to the way our business is run.
+            Partnering with The Coca-Cola Company, we continually pursue initiatives
+            for conservation of natural resources and combat against climate change.
+          </p>
+        </header>
+
+        <div class="mt-9 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-4">
+          <article class="min-w-0 rounded-xl border border-dashed border-slate-200 p-2">
+            <div class="rounded-lg bg-gradient-to-br from-[#FFFBF6] to-[#DAE0E8] h-full shadow p-4 sm:p-5">
+              <span
+                class="inline-block rounded bg-primary px-2 py-1 text-xs font-semibold uppercase leading-tight text-white">Climate</span>
+              <p
+                class="mb-0 mt-3 whitespace-nowrap font-heading text-3xl sm:text-5xl lg:text-7xl font-semibold leading-none text-black">
+                40<span class="text-3xl">%</span></p>
+              <p class="mt-4 max-w-72">
+                Achieved 40%+ renewable energy adoption across manufacturing facilities.
+              </p>
+            </div>
+          </article>
+          <article class="min-w-0 rounded-xl border border-dashed border-slate-200 p-2">
+            <div class="rounded-lg bg-gradient-to-br from-[#FFFBF6] to-[#DAE0E8] h-full shadow p-4 sm:p-5">
+              <span
+                class="inline-block rounded bg-primary px-2 py-1 text-xs font-semibold uppercase leading-tight text-white">Packaging</span>
+              <p
+                class="mb-0 mt-3 whitespace-nowrap font-heading text-3xl sm:text-5xl lg:text-7xl font-semibold leading-none text-black">
+                35,000<span class="text-3xl">+</span></p>
+              <p class="mt-4 max-w-72">
+                Recycled over 35,000 tonnes of plastic through sustainability initiatives in 2024.
+              </p>
+            </div>
+          </article>
+          <article class="min-w-0 rounded-xl border border-dashed border-slate-200 p-2">
+            <div class="rounded-lg bg-gradient-to-br from-[#FFFBF6] to-[#DAE0E8] h-full shadow p-4 sm:p-5">
+              <span
+                class="inline-block rounded bg-primary px-2 py-1 text-xs font-semibold uppercase leading-tight text-white">Water</span>
+              <p
+                class="mb-0 mt-3 whitespace-nowrap font-heading text-3xl sm:text-5xl lg:text-7xl font-semibold leading-none text-black">
+                2M<span class="text-3xl">+</span> <span
+                  class="font-heading text-3xl sm:text-5xl lg:text-7xl font-semibold leading-none text-black">M<sup
+                    class="text-3xl">3</sup></span></p>
+              <p class="mt-4 max-w-72">
+                Replenished over 2 million cubic meters of water and achieved 100% water
+                replenishment through conservation.
+              </p>
+            </div>
+          </article>
+          <article class="min-w-0 rounded-xl border border-dashed border-slate-200 p-2">
+            <div class="rounded-lg bg-gradient-to-br from-[#FFFBF6] to-[#DAE0E8] h-full shadow p-4 sm:p-5">
+              <span
+                class="inline-block rounded bg-primary px-2 py-1 text-xs font-semibold uppercase leading-tight text-white">Communities</span>
+              <p
+                class="mb-0 mt-3 whitespace-nowrap font-heading text-3xl sm:text-5xl lg:text-7xl font-semibold leading-none text-black">
+                146,100</p>
+              <p class="mt-4 max-w-72">
+                Supported over 146,100 people through skill development programs since 2023.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- // Our Impact -->
+
+    <!-- Brand Section -->
+    <section id="brands" class="bg-gradient-to-b from-[#8D3037] to-[#351217] px-4 py-16 text-white sm:px-6 lg:py-20">
+      <div class="mx-auto max-w-7xl">
+        <header class="mx-auto max-w-5xl text-center space-y-4 text-white">
+          <h2
+            class="font-heading bg-gradient-to-b from-rose-200 to-primary bg-clip-text text-4xl font-semibold uppercase text-transparent sm:text-5xl lg:text-6xl">
+            Our Brands
+          </h2>
+          <h3 class="text-lg font-bold uppercase sm:text-xl">
+            Refreshing favorites for every occasion
+          </h3>
+          <p class="text-xl font-light">Environment and Sustainability forms core to the way our business is run.
+            Partnering with The Coca-Cola Company, we continually pursue initiatives for conservation of natural
+            resources and combat against climate change.</p>
+        </header>
+
+        <div class="brands-slider mt-9">
+          <div class="px-3">
+            <article>
+              <img class="aspect-[3/4] w-full rounded-xl object-cover" src="assets/images/product/p1.jpg"
+                alt="Coca-Cola Zero can" loading="lazy" />
+              <p class="mt-3 flex items-center justify-center gap-1 font-heading lg:text-xl uppercase">
+                View Nutrition <i class="bx bx-right-arrow-alt text-lg" aria-hidden="true"></i>
+              </p>
+            </article>
+          </div>
+          <div class="px-3">
+            <article>
+              <img class="aspect-[3/4] w-full rounded-xl object-cover" src="assets/images/product/p2.jpg"
+                alt="Thums Up bottle" loading="lazy" />
+              <p class="mt-3 flex items-center justify-center gap-1 font-heading lg:text-xl uppercase">
+                View Nutrition <i class="bx bx-right-arrow-alt text-lg" aria-hidden="true"></i>
+              </p>
+            </article>
+          </div>
+          <div class="px-3">
+            <article>
+              <img class="aspect-[3/4] w-full rounded-xl object-cover" src="assets/images/product/p3.jpg"
+                alt="Coca-Cola bottle" loading="lazy" />
+              <p class="mt-3 flex items-center justify-center gap-1 font-heading lg:text-xl uppercase">
+                View Nutrition <i class="bx bx-right-arrow-alt text-lg" aria-hidden="true"></i>
+              </p>
+            </article>
+          </div>
+          <div class="px-3">
+            <article>
+              <img class="aspect-[3/4] w-full rounded-xl object-cover" src="assets/images/product/p4.jpg"
+                alt="Fanta orange bottle" loading="lazy" />
+              <p class="mt-3 flex items-center justify-center gap-1 font-heading lg:text-xl uppercase">
+                View Nutrition <i class="bx bx-right-arrow-alt text-lg" aria-hidden="true"></i>
+              </p>
+            </article>
+          </div>
+          <div class="px-3">
+            <article>
+              <img class="aspect-[3/4] w-full rounded-xl object-cover" src="assets/images/product/p4.jpg"
+                alt="Fanta orange bottle" loading="lazy" />
+              <p class="mt-3 flex items-center justify-center gap-1 font-heading lg:text-xl uppercase">
+                View Nutrition <i class="bx bx-right-arrow-alt text-lg" aria-hidden="true"></i>
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // Brand Section -->
+
+    <!-- Timeline -->
+    <section>
+      <img src="assets/images/timeline.jpg" alt="Timeline of DBPL's journey and milestones" class="w-full" loading="lazy" />
+    </section>
+    <!-- // Timeline -->
+
+    <!-- Blog Section -->
+    <section id="blog" class="bg-white px-4 py-16 lg:px-0 lg:py-24">
+      <div class="mx-auto max-w-7xl">
+        <header class="mx-auto max-w-5xl text-center space-y-4">
+          <h2
+            class="font-heading bg-gradient-to-b from-gray-500 to-primary bg-clip-text text-4xl font-semibold uppercase text-transparent sm:text-5xl lg:text-6xl">
+            Media & Events
+          </h2>
+          <h3 class="text-lg font-bold uppercase text-slate-900 sm:text-xl">Stories, Celebrations & Experiences</h3>
+          <p class="text-xl font-light">Explore the latest updates from DBPL—from product launches and community
+            initiatives to memorable events, celebrations, and the people behind our journey.</p>
+        </header>
+
+        <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="flex flex-col">
+            <img class="aspect-[3/2] w-full rounded-md object-cover" src="assets/images/product/p1.jpg"
+              alt="Coca-Cola Zero can surrounded by refreshing water droplets" loading="lazy" />
+            <h4 class="mt-4 text-lg lg:text-xl font-semibold leading-snug text-slate-900">
+              DBPL Celebrates World Environment Day 2026
+            </h4>
+            <p class="mt-2 text-sm leading-5 text-slate-700 line-clamp-4">
+              Team DBPL came together to celebrate World Environment Day through employee
+              engagement activities and a renewed commitment to responsible operations,
+              waste reduction, and a greener future.
+            </p>
+            <a class="mt-4 inline-flex w-fit items-center gap-2 rounded-md bg-primary px-4 py-2 font-heading text-sm font-semibold uppercase text-white transition hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              href="#blog">
+              Read More <i class="bx bx-right-arrow-alt text-lg" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <article class="flex flex-col">
+            <img class="aspect-[3/2] w-full rounded-md object-cover" src="assets/images/product/p2.jpg"
+              alt="Thums Up bottle at a community celebration" loading="lazy" />
+            <h4 class="mt-4 text-lg lg:text-xl font-semibold leading-snug text-slate-900">
+              Refreshment Meets Community at Kolkata Retail Connect
+            </h4>
+            <p class="mt-2 text-sm leading-5 text-slate-700 line-clamp-4">
+              DBPL connected with retail partners across Kolkata to celebrate shared growth,
+              strengthen relationships, and showcase the beverage choices that keep
+              communities refreshed every day.
+            </p>
+            <a class="mt-4 inline-flex w-fit items-center gap-2 rounded-md bg-primary px-4 py-2 font-heading text-sm font-semibold uppercase text-white transition hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              href="#blog">
+              Read More <i class="bx bx-right-arrow-alt text-lg" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <article class="flex flex-col">
+            <img class="aspect-[3/2] w-full rounded-md object-cover" src="assets/images/product/p4.jpg"
+              alt="Colorful Fanta bottle representing the people behind every bottle" loading="lazy" />
+            <h4 class="mt-4 text-lg lg:text-xl font-semibold leading-snug text-slate-900">
+              Celebrating the People Behind Every Bottle
+            </h4>
+            <p class="mt-2 text-sm leading-5 text-slate-700 line-clamp-4">
+              This Independence Day, we recognise the dedication, teamwork, and passion
+              of the people who help DBPL deliver quality refreshment to consumers across
+              the city.
+            </p>
+            <a class="mt-4 inline-flex w-fit items-center gap-2 rounded-md bg-primary px-4 py-2 font-heading text-sm font-semibold uppercase text-white transition hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              href="#blog">
+              Read More <i class="bx bx-right-arrow-alt text-lg" aria-hidden="true"></i>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- // Blog Section -->
+
+  </main>
+
+  <footer id="contact" class="bg-[#383838] text-white px-4 py-16 lg:px-0 lg:py-24">
+    <div class="mx-auto max-w-7xl">
+      <div class="grid gap-6 lg:gap-16 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="space-y-3">
+          <h2 class="flex items-center gap-2 font-heading text-2xl">
+            <i class="bx bx-buildings text-xl" aria-hidden="true"></i> Our Offices
+          </h2>
+          <p class="font-light leading-5 text-white/60">
+            Visit our Kolkata office or get in touch with our team for assistance.
+          </p>
+          <a class="inline-block text-xs uppercase hover:text-primary"
+            href="https://maps.google.com/?q=Diamond+Beverages+Kolkata">
+            Locate us
+          </a>
+        </div>
+        <div class="space-y-3">
+          <h2 class="flex items-center gap-2 font-heading text-2xl">
+            <i class="bx bx-phone text-xl" aria-hidden="true"></i> Call Support
+          </h2>
+          <p class="font-light leading-5 text-white/60">
+            Have a question? Call our team—we're happy to help.
+          </p>
+          <a class="mt-2 inline-block uppercase hover:text-primary" href="tel:+913324205300">
+            033 2420 5300
+          </a>
+        </div>
+        <div class="space-y-3">
+          <h2 class="flex items-center gap-2 font-heading text-2xl">
+            <i class="bx bx-envelope text-xl" aria-hidden="true"></i> Write to us
+          </h2>
+          <p class="font-light leading-5 text-white/60">
+            Send us your enquiry, feedback, or suggestion.
+          </p>
+          <a class="mt-2 inline-block hover:text-primary" href="mailto:helpline@diamondbev.in">
+            helpline@diamondbev.in
+          </a>
+        </div>
+        <a class="rounded-lg bg-primary p-4 transition hover:bg-red-700 space-y-3" href="mailto:helpline@diamondbev.in">
+          <h2 class="flex items-center gap-2 font-heading text-2xl">
+            <i class="bx bx-send text-xl" aria-hidden="true"></i> Connect with us
+          </h2>
+          <p class="font-light leading-5 text-white/75">We're always looking to connect with those who share an interest
+            in our products and brands.</p>
+        </a>
+      </div>
+
+      <div class="mt-10 text-center">
+        <a class="inline-block font-heading text-4xl font-extrabold tracking-tight text-primary" href="#top"
+          aria-label="DBPL home">
+          <img src="assets/images/logo.png" alt="DBPL Logo" class="mx-auto h-16 w-auto" />
+        </a>
+        <div class="mx-auto mt-1 h-1 w-16 rounded-full bg-green-500"></div>
+        <p class="mx-auto mt-4 max-w-2xl font-light leading-6 text-white/70">Coca-Cola India, is one of the country’s
+          leading beverage companies, offering a range of healthy, safe, high quality, refreshing beverage options to
+          consumers</p>
+      </div>
+
+      <nav class="mt-7 flex flex-wrap justify-center gap-x-5 gap-y-3 text-xs font-light uppercase text-white/80"
+        aria-label="Footer navigation">
+        <a class="hover:text-primary" href="#top">Home</a>
+        <a class="hover:text-primary" href="#about">About us</a>
+        <a class="hover:text-primary" href="#brands">Our products</a>
+        <a class="hover:text-primary" href="#brands">Career</a>
+        <a class="hover:text-primary" href="#blog">Events</a>
+        <a class="hover:text-primary" href="#contact">Contact us</a>
+        <a class="hover:text-primary" href="#contact">Privacy Policy</a>
+        <a class="hover:text-primary" href="#contact">Terms & Condition</a>
+      </nav>
+
+      <p class="mt-5 text-center text-xs text-white/50">
+        Copyright &copy; 2026 Diamond Beverages (P) Limited. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
+  <script src="assets/js/menu.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+
+</html>
