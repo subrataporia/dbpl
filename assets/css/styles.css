@@ -279,12 +279,25 @@ body {
     border: 1px solid rgb(15 23 42 / 12%);
     border-radius: 0.5rem;
     background: #fff;
-    transition: border-color 200ms ease, box-shadow 200ms ease;
+    transition: border-color 280ms ease, box-shadow 280ms ease;
+}
+
+.faq-item:hover {
+    border-color: rgb(15 23 42 / 24%);
 }
 
 .faq-item[open] {
     border-color: rgb(254 35 31 / 35%);
     box-shadow: 0 12px 28px rgb(15 23 42 / 7%);
+}
+
+.faq-item[open]:hover {
+    border-color: rgb(254 35 31 / 50%);
+}
+
+.faq-item.is-closing {
+    border-color: rgb(15 23 42 / 12%);
+    box-shadow: none;
 }
 
 .faq-summary {
@@ -299,6 +312,7 @@ body {
     font-weight: 600;
     line-height: 1.35;
     list-style: none;
+    user-select: none;
 }
 
 .faq-summary::-webkit-details-marker {
@@ -320,7 +334,7 @@ body {
     background: rgb(254 35 31 / 10%);
     color: var(--color-primary);
     font-size: 1.35rem;
-    transition: color 200ms ease, background-color 200ms ease, transform 200ms ease;
+    transition: color 280ms ease, background-color 280ms ease, transform 280ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .faq-item[open] .faq-icon {
@@ -329,11 +343,18 @@ body {
     color: #fff;
 }
 
+.faq-item.is-closing .faq-icon {
+    transform: rotate(0deg);
+    background: rgb(254 35 31 / 10%);
+    color: var(--color-primary);
+}
+
 .faq-answer {
     padding: 0 4.75rem 1.25rem 1.25rem;
     color: #475569;
     font-size: 0.9375rem;
     line-height: 1.7;
+    will-change: opacity, transform;
 }
 
 .faq-answer p {
@@ -353,7 +374,36 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
     .faq-item,
-    .faq-icon {
+    .faq-icon,
+    .faq-answer {
         transition: none;
     }
+}
+
+/* Event Filter Buttons */
+.event-filter-btn {
+    border: 1px solid #e2e8f0;
+    background-color: #ffffff;
+    color: #475569;
+    transition: background-color 200ms ease, color 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
+    cursor: pointer;
+}
+
+.event-filter-btn:hover {
+    background-color: #f1f5f9;
+    color: #0f172a;
+    border-color: #cbd5e1;
+}
+
+.event-filter-btn.active {
+    background-color: var(--color-primary);
+    color: #ffffff;
+    border-color: var(--color-primary);
+    box-shadow: 0 4px 12px rgb(254 35 31 / 25%);
+}
+
+.event-filter-btn.active:hover {
+    background-color: #e01e1a;
+    color: #ffffff;
+    border-color: #e01e1a;
 }
