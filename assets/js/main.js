@@ -60,6 +60,22 @@ $(function () {
     ],
   });
 
+  const faqItems = document.querySelectorAll("[data-faq-accordion] details");
+
+  faqItems.forEach((item) => {
+    item.addEventListener("toggle", () => {
+      if (!item.open) {
+        return;
+      }
+
+      faqItems.forEach((otherItem) => {
+        if (otherItem !== item) {
+          otherItem.open = false;
+        }
+      });
+    });
+  });
+
   const stats = document.querySelector("#journey-stats");
   const counters = stats?.querySelectorAll("[data-counter]");
 
