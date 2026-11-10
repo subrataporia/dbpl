@@ -381,7 +381,8 @@ body {
 }
 
 /* Event Filter Buttons */
-.event-filter-btn {
+.event-filter-btn,
+.team-filter-btn {
     border: 1px solid #e2e8f0;
     background-color: #ffffff;
     color: #475569;
@@ -389,20 +390,23 @@ body {
     cursor: pointer;
 }
 
-.event-filter-btn:hover {
+.event-filter-btn:hover,
+.team-filter-btn:hover {
     background-color: #f1f5f9;
     color: #0f172a;
     border-color: #cbd5e1;
 }
 
-.event-filter-btn.active {
+.event-filter-btn.active,
+.team-filter-btn.active {
     background-color: var(--color-primary);
     color: #ffffff;
     border-color: var(--color-primary);
     box-shadow: 0 4px 12px rgb(254 35 31 / 25%);
 }
 
-.event-filter-btn.active:hover {
+.event-filter-btn.active:hover,
+.team-filter-btn.active:hover {
     background-color: #e01e1a;
     color: #ffffff;
     border-color: #e01e1a;

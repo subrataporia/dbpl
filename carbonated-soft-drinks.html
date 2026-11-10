@@ -1,0 +1,993 @@
+<!doctype html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Discover the refreshing range of carbonated soft drinks bottled by Diamond Beverages (P) Limited (DBPL), including Coca-Cola, Thums Up, Sprite, Fanta, and Limca." />
+    <title>Carbonated Soft Drinks | Diamond Beverages (P) Limited (DBPL)</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        window.tailwind = window.tailwind || {};
+        window.tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FE231F",
+                    },
+                    fontFamily: {
+                        heading: ['"Barlow Condensed"', "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+
+</head>
+
+<body id="top">
+
+    <nav class="absolute top-4 lg:top-10 left-1/2 -translate-x-1/2 z-40 w-full px-4 lg:px-0 lg:max-w-7xl">
+        <div class="bg-white rounded-full px-4 lg:px-10">
+            <div class="flex items-center justify-between lg:h-20 h-16">
+                <div class="flex justify-between items-center w-full lg:w-auto">
+                    <div class="flex items-center gap-4">
+                        <img src="assets/images/logo.png" class="h-8 lg:h-10" alt="Diamond Beverages Logo">
+                        <div class="h-10 border-l border-gray-300"></div>
+                        <img src="assets/images/Coca-Cola_logo.png" class="h-8 lg:h-10" alt="Coca-Cola Logo">
+                    </div>
+                    <button id="mobile-menu-open"
+                        class="lg:hidden text-gray-600 hover:text-gray-900 focus:outline-none px-2 py-1 rounded-full bg-gray-100"
+                        aria-label="Open Menu">
+                        <i class="bx bx-menu text-2xl"></i>
+                    </button>
+                </div>
+
+                <div class="hidden lg:flex items-center space-x-8 h-full">
+                    <a href="index.html" class="text-black hover:text-primary font-medium transition uppercase">Home</a>
+                    <div class="group h-full flex items-center">
+                        <button
+                            class="flex items-center gap-1 text-black group-hover:text-primary font-medium h-full cursor-pointer uppercase">
+                            About Us
+                            <svg class="w-3 h-3 transition-transform group-hover:rotate-180" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div
+                            class="w-[240px] absolute top-20 left-50 bg-white/90 backdrop-blur-sm shadow-xl opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-200 z-50">
+                            <div class="p-4 px-6">
+                                <ul class="gap-4 flex flex-col">
+                                    <li><a href="#" class="block text-sm text-black hover:text-primary">Company
+                                            Profile</a>
+                                    </li>
+                                    <li><a href="#" class="block text-sm text-black hover:text-primary">Our Vision And
+                                            Values</a>
+                                    </li>
+                                    <li><a href="#" class="block text-sm text-black hover:text-primary">How We
+                                            Execute</a></li>
+                                    <li><a href="#" class="block text-sm text-black hover:text-primary">Environment
+                                            Management</a></li>
+                                    <li><a href="#" class="block text-sm text-black hover:text-primary">Our Team</a>
+                                    </li>
+                                    <li><a href="#" class="block text-sm text-black hover:text-primary">Our
+                                            Milestones</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group h-full flex items-center">
+                        <button
+                            class="flex items-center gap-1 text-black group-hover:text-primary font-medium h-full cursor-pointer uppercase">
+                            Products
+                            <svg class="w-3 h-3 transition-transform group-hover:rotate-180" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div
+                            class="w-[240px] absolute top-20 left-50 bg-white/90 backdrop-blur-sm shadow-xl opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-200 z-50">
+                            <div class="p-4 px-6">
+                                <ul class="gap-4 flex flex-col">
+                                    <li><a href="#" class="block text-sm text-black hover:text-primary">Carbonated Soft
+                                            Drinks</a></li>
+                                    <li><a href="#" class="block text-sm text-black hover:text-primary">Juices</a></li>
+                                    <li><a href="#" class="block text-sm text-black hover:text-primary">Water</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="index.html"
+                        class="text-black hover:text-primary font-medium transition uppercase">Sustainability</a>
+                    <a href="index.html"
+                        class="text-black hover:text-primary font-medium transition uppercase">Events</a>
+                    <a href="index.html" class="text-black hover:text-primary font-medium transition uppercase">Contact
+                        Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="mobile-sidebar" class="fixed inset-0 z-50 invisible transition-all duration-300" role="dialog"
+        aria-modal="true">
+        <div id="mobile-backdrop" class="fixed inset-0 bg-gray-900/50 opacity-0 transition-opacity duration-300"></div>
+        <div id="sidebar-panel"
+            class="fixed inset-y-0 left-0 w-full max-w-xs bg-white shadow-2xl p-4 flex flex-col justify-between -translate-x-full transition-transform duration-300 ease-in-out">
+            <div>
+                <div class="flex items-center justify-between pb-4 border-b border-gray-100">
+                    <a href="#" class="text-xl font-bold text-indigo-600"><img src="assets/images/logo.png" class="w-32"
+                            alt=""></a>
+                    <button id="mobile-menu-close" class="text-gray-500 hover:text-gray-800 p-1"
+                        aria-label="Close Menu">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="mt-6 space-y-4">
+                    <a href="#" class="block text-base font-semibold text-gray-900 hover:text-primary">Home</a>
+                    <div>
+                        <button
+                            class="mobile-mega-toggle w-full flex items-center justify-between text-base font-semibold text-gray-900 hover:text-primary cursor-pointer">
+                            About Us
+                            <svg id="accordion-arrow" class="w-4 h-4 transition-transform duration-200" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <ul
+                            class="mobile-mega-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out pl-2 space-y-2">
+                            <li><a href="#" class="block text-xs text-black hover:text-primary font-medium">Company
+                                    Profile</a></li>
+                            <li><a href="#" class="block text-xs text-black hover:text-primary font-medium">Our Vision
+                                    And Values</a></li>
+                            <li><a href="#" class="block text-xs text-black hover:text-primary font-medium">How We
+                                    Execute</a></li>
+                            <li><a href="#" class="block text-xs text-black hover:text-primary font-medium">Environment
+                                    Management</a></li>
+                            <li><a href="#" class="block text-xs text-black hover:text-primary font-medium">Our Team</a>
+                            </li>
+                            <li><a href="#" class="block text-xs text-black hover:text-primary font-medium">Our
+                                    Milestones</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <button
+                            class="mobile-mega-toggle w-full flex items-center justify-between text-base font-semibold text-gray-900 hover:text-primary cursor-pointer">
+                            Products
+                            <svg id="accordion-arrow" class="w-4 h-4 transition-transform duration-200" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <ul
+                            class="mobile-mega-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out pl-2 space-y-2">
+                            <li><a href="#" class="block text-xs text-black hover:text-primary font-medium">Company
+                                    Profile</a></li>
+                            <li><a href="#" class="block text-xs text-black hover:text-primary font-medium">Our Vision
+                                    And Values</a></li>
+                            <li><a href="#" class="block text-xs text-black hover:text-primary font-medium">How We
+                                    Execute</a></li>
+                            <li><a href="#" class="block text-xs text-black hover:text-primary font-medium">Environment
+                                    Management</a></li>
+                            <li><a href="#" class="block text-xs text-black hover:text-primary font-medium">Our Team</a>
+                            </li>
+                            <li><a href="#" class="block text-xs text-black hover:text-primary font-medium">Our
+                                    Milestones</a></li>
+                        </ul>
+                    </div>
+
+                    <a href="#"
+                        class="block text-base font-semibold text-gray-900 hover:text-primary">Sustainability</a>
+
+                    <a href="#" class="block text-base font-semibold text-gray-900 hover:text-primary">Events</a>
+
+                    <a href="#" class="block text-base font-semibold text-gray-900 hover:text-primary">Contact Us</a>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative isolate overflow-hidden bg-[#9E201D] py-16 lg:py-24">
+            <div class="pointer-events-none absolute inset-y-0 left-0 hidden w-1/4 sm:block" aria-hidden="true">
+                <img class="ice-float ice-float-one absolute left-[12%] top-[20%] w-8 lg:w-14"
+                    src="assets/images/ice1.png" alt="" />
+                <img class="ice-float ice-float-two absolute left-[48%] top-[48%] w-10 lg:w-16"
+                    src="assets/images/ice2.png" alt="" />
+                <img class="ice-float ice-float-three absolute left-[20%] top-[74%] w-9 lg:w-12"
+                    src="assets/images/ice3.png" alt="" />
+            </div>
+            <div class="pointer-events-none absolute inset-y-0 right-0 hidden w-1/4 sm:block" aria-hidden="true">
+                <img class="ice-float ice-float-two absolute right-[18%] top-[18%] w-9 lg:w-12"
+                    src="assets/images/ice4.png" alt="" />
+                <img class="ice-float ice-float-three absolute right-[48%] top-[50%] w-10 lg:w-16"
+                    src="assets/images/ice5.png" alt="" />
+                <img class="ice-float ice-float-one absolute right-[12%] top-[76%] w-8 lg:w-14"
+                    src="assets/images/ice6.png" alt="" />
+            </div>
+            <div class="relative z-10 mx-auto mt-10 max-w-3xl space-y-5 px-4 text-center lg:mt-20 lg:px-0">
+                <h1 class="font-heading text-4xl uppercase text-white sm:text-5xl lg:text-6xl">
+                    Carbonated Soft Drinks
+                </h1>
+                <p class="mt-4 text-lg font-light text-white/80">Experience the iconic fizz, bold flavours, and timeless
+                    refreshment of Coca-Cola’s world-renowned sparkling beverages. From the classic taste of Coca-Cola
+                    and the thundering punch of Thums Up to the crisp zest of Sprite and vibrant Fanta, discover drinks
+                    crafted to elevate every moment.</p>
+                <div class="mt-6" aria-label="Breadcrumb">
+                    <ul
+                        class="inline-flex items-center justify-center gap-2 text-white/80 bg-white/10 border border-white/20 rounded-full px-4 py-2 text-sm">
+                        <li><a class="transition hover:text-white" href="index.html">Home</a></li>
+                        <li aria-hidden="true" class="text-white/60 leading-none">
+                            <i class="bx bx-chevron-right leading-none"></i>
+                        </li>
+                        <li><a class="transition hover:text-white" href="index.html#brands">Products</a></li>
+                        <li aria-hidden="true" class="text-white/60 leading-none">
+                            <i class="bx bx-chevron-right leading-none"></i>
+                        </li>
+                        <li class="font-medium text-white" aria-current="page">Carbonated Soft Drinks</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- // Hero Section -->
+
+        <!-- Products Section -->
+        <section id="products" class="bg-[#F8F9FA] px-4 py-16 sm:px-6 lg:px-0 lg:py-24">
+            <div class="mx-auto max-w-7xl">
+                <!-- Section Header -->
+                <header class="mx-auto max-w-3xl text-center space-y-3">
+                    <p class="font-heading text-lg font-semibold uppercase tracking-[0.18em] text-primary">
+                        Our Sparkling Range
+                    </p>
+                    <h2
+                        class="font-heading bg-gradient-to-b from-gray-700 to-primary bg-clip-text text-4xl font-semibold uppercase leading-none text-transparent sm:text-5xl lg:text-6xl">
+                        Carbonated Beverages
+                    </h2>
+                    <p class="text-base sm:text-lg font-light text-gray-600">
+                        Crafted to perfection under stringent quality standards. Explore our iconic sparkling drinks
+                        available across diverse returnable glass, can, and PET bottle packaging formats.
+                    </p>
+                </header>
+
+                <!-- Product Cards Grid -->
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                    <!-- 1. Coca-Cola -->
+                    <article
+                        class="group bg-white rounded-2xl border border-gray-200/90 hover:border-primary/40 hover:shadow-2xl hover:shadow-red-500/10 transition-all duration-300 overflow-hidden flex flex-col justify-between">
+                        <div>
+                            <!-- Product Image -->
+                            <div class="relative aspect-square w-full overflow-hidden bg-gray-100">
+                                <img src="assets/images/product/coca-cola.png" alt="Coca-Cola Original Taste"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    loading="lazy" />
+                                <span
+                                    class="absolute top-3 left-3 bg-primary text-white text-[11px] font-semibold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">
+                                    Iconic Cola
+                                </span>
+                            </div>
+
+                            <!-- Content -->
+                            <div class="p-6">
+                                <h3
+                                    class="font-heading text-2xl lg:text-3xl font-bold uppercase text-slate-900 group-hover:text-primary transition-colors">
+                                    Coca-Cola
+                                </h3>
+                                <p class="text-xs font-semibold uppercase tracking-wider text-primary mt-1">
+                                    Real Magic • Original Cola Experience
+                                </p>
+                                <p class="mt-3 text-sm text-gray-600 leading-relaxed font-light">
+                                    The world’s favourite soft drink delivering the signature crisp, uplifting taste in
+                                    every sip. Crafted with carbonated purified water and the iconic secret natural cola
+                                    flavour.
+                                </p>
+
+                                <!-- Available Containers -->
+                                <div class="mt-5 pt-4 border-t border-gray-100 space-y-3">
+                                    <div class="flex items-center justify-between">
+                                        <p
+                                            class="text-xs font-semibold uppercase tracking-wider text-slate-700 flex items-center gap-1.5">
+                                            <i class="bx bx-package text-primary text-base"></i> Available Containers
+                                        </p>
+                                        <span class="text-[11px] font-medium text-gray-400">Formats &amp; Sizes</span>
+                                    </div>
+
+                                    <!-- Container format icons -->
+                                    <div class="grid grid-cols-3 gap-2 text-center">
+                                        <div class="bg-gray-50 rounded-lg p-2 border border-gray-100">
+                                            <i class="bx bx-wine text-primary text-base"></i>
+                                            <p class="text-[11px] font-bold text-gray-800 uppercase mt-0.5">Glass (RGB)
+                                            </p>
+                                            <p class="text-[10px] text-gray-500 font-medium">200ml, 300ml</p>
+                                        </div>
+                                        <div class="bg-gray-50 rounded-lg p-2 border border-gray-100">
+                                            <i class="bx bx-cylinder text-primary text-base"></i>
+                                            <p class="text-[11px] font-bold text-gray-800 uppercase mt-0.5">Can</p>
+                                            <p class="text-[10px] text-gray-500 font-medium">180ml, 300ml</p>
+                                        </div>
+                                        <div class="bg-gray-50 rounded-lg p-2 border border-gray-100">
+                                            <i class="bx bx-droplet text-primary text-base"></i>
+                                            <p class="text-[11px] font-bold text-gray-800 uppercase mt-0.5">PET Bottle
+                                            </p>
+                                            <p class="text-[10px] text-gray-500 font-medium">250ml - 2L</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Container pack sizes pills -->
+                                    <div class="flex flex-wrap gap-1.5 pt-1">
+                                        <span
+                                            class="text-[11px] bg-red-50 text-red-700 px-2 py-0.5 rounded-full font-medium border border-red-100">200ml
+                                            RGB</span>
+                                        <span
+                                            class="text-[11px] bg-red-50 text-red-700 px-2 py-0.5 rounded-full font-medium border border-red-100">300ml
+                                            RGB</span>
+                                        <span
+                                            class="text-[11px] bg-red-50 text-red-700 px-2 py-0.5 rounded-full font-medium border border-red-100">180ml
+                                            Can</span>
+                                        <span
+                                            class="text-[11px] bg-red-50 text-red-700 px-2 py-0.5 rounded-full font-medium border border-red-100">300ml
+                                            Can</span>
+                                        <span
+                                            class="text-[11px] bg-red-50 text-red-700 px-2 py-0.5 rounded-full font-medium border border-red-100">250ml
+                                            PET</span>
+                                        <span
+                                            class="text-[11px] bg-red-50 text-red-700 px-2 py-0.5 rounded-full font-medium border border-red-100">600ml
+                                            PET</span>
+                                        <span
+                                            class="text-[11px] bg-red-50 text-red-700 px-2 py-0.5 rounded-full font-medium border border-red-100">1.25L
+                                            PET</span>
+                                        <span
+                                            class="text-[11px] bg-red-50 text-red-700 px-2 py-0.5 rounded-full font-medium border border-red-100">2L
+                                            PET</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card Footer Button -->
+                        <div class="p-6 pt-0">
+                            <button type="button" data-product="coca-cola"
+                                class="open-product-modal w-full inline-flex items-center justify-center gap-2 rounded-lg bg-gray-50 border border-gray-200 group-hover:bg-primary group-hover:border-primary group-hover:text-white px-5 py-3 font-heading text-sm font-semibold uppercase text-gray-800 transition-all duration-200 shadow-xs hover:shadow cursor-pointer">
+                                View Details <i class="bx bx-right-arrow-alt text-lg"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- 2. Thums Up -->
+                    <article
+                        class="group bg-white rounded-2xl border border-gray-200/90 hover:border-primary/40 hover:shadow-2xl hover:shadow-red-500/10 transition-all duration-300 overflow-hidden flex flex-col justify-between">
+                        <div>
+                            <!-- Product Image -->
+                            <div class="relative aspect-square w-full overflow-hidden bg-gray-100">
+                                <img src="assets/images/product/thumpsup.png" alt="Thums Up Charged"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    loading="lazy" />
+                                <span
+                                    class="absolute top-3 left-3 bg-primary text-white text-[11px] font-semibold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">
+                                    Strong Cola
+                                </span>
+                            </div>
+
+                            <!-- Content -->
+                            <div class="p-6">
+                                <h3
+                                    class="font-heading text-2xl lg:text-3xl font-bold uppercase text-slate-900 group-hover:text-primary transition-colors">
+                                    Thums Up
+                                </h3>
+                                <p class="text-xs font-semibold uppercase tracking-wider text-primary mt-1">
+                                    Taste the Thunder • Bold &amp; Spicy Punch
+                                </p>
+                                <p class="mt-3 text-sm text-gray-600 leading-relaxed font-light">
+                                    India’s undisputed leading homegrown strong cola. Engineered for bold thirst,
+                                    featuring intense carbonation, distinct spice notes, and a thunderous punch.
+                                </p>
+
+                                <!-- Available Containers -->
+                                <div class="mt-5 pt-4 border-t border-gray-100 space-y-3">
+                                    <div class="flex items-center justify-between">
+                                        <p
+                                            class="text-xs font-semibold uppercase tracking-wider text-slate-700 flex items-center gap-1.5">
+                                            <i class="bx bx-package text-primary text-base"></i> Available Containers
+                                        </p>
+                                        <span class="text-[11px] font-medium text-gray-400">Formats &amp; Sizes</span>
+                                    </div>
+
+                                    <!-- Container format icons -->
+                                    <div class="grid grid-cols-3 gap-2 text-center">
+                                        <div class="bg-gray-50 rounded-lg p-2 border border-gray-100">
+                                            <i class="bx bx-wine text-primary text-base"></i>
+                                            <p class="text-[11px] font-bold text-gray-800 uppercase mt-0.5">Glass (RGB)
+                                            </p>
+                                            <p class="text-[10px] text-gray-500 font-medium">200ml, 300ml</p>
+                                        </div>
+                                        <div class="bg-gray-50 rounded-lg p-2 border border-gray-100">
+                                            <i class="bx bx-cylinder text-primary text-base"></i>
+                                            <p class="text-[11px] font-bold text-gray-800 uppercase mt-0.5">Can</p>
+                                            <p class="text-[10px] text-gray-500 font-medium">180ml, 300ml</p>
+                                        </div>
+                                        <div class="bg-gray-50 rounded-lg p-2 border border-gray-100">
+                                            <i class="bx bx-droplet text-primary text-base"></i>
+                                            <p class="text-[11px] font-bold text-gray-800 uppercase mt-0.5">PET Bottle
+                                            </p>
+                                            <p class="text-[10px] text-gray-500 font-medium">250ml - 2.25L</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Container pack sizes pills -->
+                                    <div class="flex flex-wrap gap-1.5 pt-1">
+                                        <span
+                                            class="text-[11px] bg-red-50 text-red-700 px-2 py-0.5 rounded-full font-medium border border-red-100">200ml
+                                            RGB</span>
+                                        <span
+                                            class="text-[11px] bg-red-50 text-red-700 px-2 py-0.5 rounded-full font-medium border border-red-100">300ml
+                                            RGB</span>
+                                        <span
+                                            class="text-[11px] bg-red-50 text-red-700 px-2 py-0.5 rounded-full font-medium border border-red-100">180ml
+                                            Can</span>
+                                        <span
+                                            class="text-[11px] bg-red-50 text-red-700 px-2 py-0.5 rounded-full font-medium border border-red-100">300ml
+                                            Can</span>
+                                        <span
+                                            class="text-[11px] bg-red-50 text-red-700 px-2 py-0.5 rounded-full font-medium border border-red-100">250ml
+                                            PET</span>
+                                        <span
+                                            class="text-[11px] bg-red-50 text-red-700 px-2 py-0.5 rounded-full font-medium border border-red-100">600ml
+                                            PET</span>
+                                        <span
+                                            class="text-[11px] bg-red-50 text-red-700 px-2 py-0.5 rounded-full font-medium border border-red-100">1.25L
+                                            PET</span>
+                                        <span
+                                            class="text-[11px] bg-red-50 text-red-700 px-2 py-0.5 rounded-full font-medium border border-red-100">2.25L
+                                            PET</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card Footer Button -->
+                        <div class="p-6 pt-0">
+                            <button type="button" data-product="thums-up"
+                                class="open-product-modal w-full inline-flex items-center justify-center gap-2 rounded-lg bg-gray-50 border border-gray-200 group-hover:bg-primary group-hover:border-primary group-hover:text-white px-5 py-3 font-heading text-sm font-semibold uppercase text-gray-800 transition-all duration-200 shadow-xs hover:shadow cursor-pointer">
+                                View Details <i class="bx bx-right-arrow-alt text-lg"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- 3. Sprite -->
+                    <article
+                        class="group bg-white rounded-2xl border border-gray-200/90 hover:border-primary/40 hover:shadow-2xl hover:shadow-red-500/10 transition-all duration-300 overflow-hidden flex flex-col justify-between">
+                        <div>
+                            <!-- Product Image -->
+                            <div class="relative aspect-square w-full overflow-hidden bg-gray-100">
+                                <img src="assets/images/product/sprite.png" alt="Sprite Lemon Lime"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    loading="lazy" />
+                                <span
+                                    class="absolute top-3 left-3 bg-emerald-600 text-white text-[11px] font-semibold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">
+                                    Lemon-Lime
+                                </span>
+                            </div>
+
+                            <!-- Content -->
+                            <div class="p-6">
+                                <h3
+                                    class="font-heading text-2xl lg:text-3xl font-bold uppercase text-slate-900 group-hover:text-primary transition-colors">
+                                    Sprite
+                                </h3>
+                                <p class="text-xs font-semibold uppercase tracking-wider text-emerald-600 mt-1">
+                                    Clear Hai! • Crisp &amp; Clean Lime Zest
+                                </p>
+                                <p class="mt-3 text-sm text-gray-600 leading-relaxed font-light">
+                                    The crisp, transparent lemon-lime sparkling drink with zero colour. Delivers an
+                                    immediate rush of clean citrus fizz that cuts through thirst and refreshes your
+                                    senses.
+                                </p>
+
+                                <!-- Available Containers -->
+                                <div class="mt-5 pt-4 border-t border-gray-100 space-y-3">
+                                    <div class="flex items-center justify-between">
+                                        <p
+                                            class="text-xs font-semibold uppercase tracking-wider text-slate-700 flex items-center gap-1.5">
+                                            <i class="bx bx-package text-primary text-base"></i> Available Containers
+                                        </p>
+                                        <span class="text-[11px] font-medium text-gray-400">Formats &amp; Sizes</span>
+                                    </div>
+
+                                    <!-- Container format icons -->
+                                    <div class="grid grid-cols-3 gap-2 text-center">
+                                        <div class="bg-gray-50 rounded-lg p-2 border border-gray-100">
+                                            <i class="bx bx-wine text-primary text-base"></i>
+                                            <p class="text-[11px] font-bold text-gray-800 uppercase mt-0.5">Glass (RGB)
+                                            </p>
+                                            <p class="text-[10px] text-gray-500 font-medium">200ml, 300ml</p>
+                                        </div>
+                                        <div class="bg-gray-50 rounded-lg p-2 border border-gray-100">
+                                            <i class="bx bx-cylinder text-primary text-base"></i>
+                                            <p class="text-[11px] font-bold text-gray-800 uppercase mt-0.5">Can</p>
+                                            <p class="text-[10px] text-gray-500 font-medium">180ml, 300ml</p>
+                                        </div>
+                                        <div class="bg-gray-50 rounded-lg p-2 border border-gray-100">
+                                            <i class="bx bx-droplet text-primary text-base"></i>
+                                            <p class="text-[11px] font-bold text-gray-800 uppercase mt-0.5">PET Bottle
+                                            </p>
+                                            <p class="text-[10px] text-gray-500 font-medium">250ml - 2L</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Container pack sizes pills -->
+                                    <div class="flex flex-wrap gap-1.5 pt-1">
+                                        <span
+                                            class="text-[11px] bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded-full font-medium border border-emerald-100">200ml
+                                            RGB</span>
+                                        <span
+                                            class="text-[11px] bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded-full font-medium border border-emerald-100">300ml
+                                            RGB</span>
+                                        <span
+                                            class="text-[11px] bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded-full font-medium border border-emerald-100">180ml
+                                            Can</span>
+                                        <span
+                                            class="text-[11px] bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded-full font-medium border border-emerald-100">300ml
+                                            Can</span>
+                                        <span
+                                            class="text-[11px] bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded-full font-medium border border-emerald-100">250ml
+                                            PET</span>
+                                        <span
+                                            class="text-[11px] bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded-full font-medium border border-emerald-100">600ml
+                                            PET</span>
+                                        <span
+                                            class="text-[11px] bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded-full font-medium border border-emerald-100">1.25L
+                                            PET</span>
+                                        <span
+                                            class="text-[11px] bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded-full font-medium border border-emerald-100">2L
+                                            PET</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card Footer Button -->
+                        <div class="p-6 pt-0">
+                            <button type="button" data-product="sprite"
+                                class="open-product-modal w-full inline-flex items-center justify-center gap-2 rounded-lg bg-gray-50 border border-gray-200 group-hover:bg-primary group-hover:border-primary group-hover:text-white px-5 py-3 font-heading text-sm font-semibold uppercase text-gray-800 transition-all duration-200 shadow-xs hover:shadow cursor-pointer">
+                                View Details <i class="bx bx-right-arrow-alt text-lg"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- 4. Fanta -->
+                    <article
+                        class="group bg-white rounded-2xl border border-gray-200/90 hover:border-primary/40 hover:shadow-2xl hover:shadow-red-500/10 transition-all duration-300 overflow-hidden flex flex-col justify-between">
+                        <div>
+                            <!-- Product Image -->
+                            <div class="relative aspect-square w-full overflow-hidden bg-gray-100">
+                                <img src="assets/images/product/fanta.png" alt="Fanta Orange Fizz"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    loading="lazy" />
+                                <span
+                                    class="absolute top-3 left-3 bg-amber-500 text-white text-[11px] font-semibold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">
+                                    Fruity Orange
+                                </span>
+                            </div>
+
+                            <!-- Content -->
+                            <div class="p-6">
+                                <h3
+                                    class="font-heading text-2xl lg:text-3xl font-bold uppercase text-slate-900 group-hover:text-primary transition-colors">
+                                    Fanta
+                                </h3>
+                                <p class="text-xs font-semibold uppercase tracking-wider text-amber-600 mt-1">
+                                    Colourful Fun • Tingling Fruity Bubbles
+                                </p>
+                                <p class="mt-3 text-sm text-gray-600 leading-relaxed font-light">
+                                    Vibrant, bright, and intensely fruity orange sparkling drink. Loaded with sensory
+                                    orange bubbles that bring spontaneous fun and playful excitement to every
+                                    celebration.
+                                </p>
+
+                                <!-- Available Containers -->
+                                <div class="mt-5 pt-4 border-t border-gray-100 space-y-3">
+                                    <div class="flex items-center justify-between">
+                                        <p
+                                            class="text-xs font-semibold uppercase tracking-wider text-slate-700 flex items-center gap-1.5">
+                                            <i class="bx bx-package text-primary text-base"></i> Available Containers
+                                        </p>
+                                        <span class="text-[11px] font-medium text-gray-400">Formats &amp; Sizes</span>
+                                    </div>
+
+                                    <!-- Container format icons -->
+                                    <div class="grid grid-cols-3 gap-2 text-center">
+                                        <div class="bg-gray-50 rounded-lg p-2 border border-gray-100">
+                                            <i class="bx bx-wine text-primary text-base"></i>
+                                            <p class="text-[11px] font-bold text-gray-800 uppercase mt-0.5">Glass (RGB)
+                                            </p>
+                                            <p class="text-[10px] text-gray-500 font-medium">200ml, 300ml</p>
+                                        </div>
+                                        <div class="bg-gray-50 rounded-lg p-2 border border-gray-100">
+                                            <i class="bx bx-cylinder text-primary text-base"></i>
+                                            <p class="text-[11px] font-bold text-gray-800 uppercase mt-0.5">Can</p>
+                                            <p class="text-[10px] text-gray-500 font-medium">180ml, 300ml</p>
+                                        </div>
+                                        <div class="bg-gray-50 rounded-lg p-2 border border-gray-100">
+                                            <i class="bx bx-droplet text-primary text-base"></i>
+                                            <p class="text-[11px] font-bold text-gray-800 uppercase mt-0.5">PET Bottle
+                                            </p>
+                                            <p class="text-[10px] text-gray-500 font-medium">250ml - 2L</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Container pack sizes pills -->
+                                    <div class="flex flex-wrap gap-1.5 pt-1">
+                                        <span
+                                            class="text-[11px] bg-amber-50 text-amber-800 px-2 py-0.5 rounded-full font-medium border border-amber-100">200ml
+                                            RGB</span>
+                                        <span
+                                            class="text-[11px] bg-amber-50 text-amber-800 px-2 py-0.5 rounded-full font-medium border border-amber-100">300ml
+                                            RGB</span>
+                                        <span
+                                            class="text-[11px] bg-amber-50 text-amber-800 px-2 py-0.5 rounded-full font-medium border border-amber-100">180ml
+                                            Can</span>
+                                        <span
+                                            class="text-[11px] bg-amber-50 text-amber-800 px-2 py-0.5 rounded-full font-medium border border-amber-100">300ml
+                                            Can</span>
+                                        <span
+                                            class="text-[11px] bg-amber-50 text-amber-800 px-2 py-0.5 rounded-full font-medium border border-amber-100">250ml
+                                            PET</span>
+                                        <span
+                                            class="text-[11px] bg-amber-50 text-amber-800 px-2 py-0.5 rounded-full font-medium border border-amber-100">600ml
+                                            PET</span>
+                                        <span
+                                            class="text-[11px] bg-amber-50 text-amber-800 px-2 py-0.5 rounded-full font-medium border border-amber-100">1.25L
+                                            PET</span>
+                                        <span
+                                            class="text-[11px] bg-amber-50 text-amber-800 px-2 py-0.5 rounded-full font-medium border border-amber-100">2L
+                                            PET</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card Footer Button -->
+                        <div class="p-6 pt-0">
+                            <button type="button" data-product="fanta"
+                                class="open-product-modal w-full inline-flex items-center justify-center gap-2 rounded-lg bg-gray-50 border border-gray-200 group-hover:bg-primary group-hover:border-primary group-hover:text-white px-5 py-3 font-heading text-sm font-semibold uppercase text-gray-800 transition-all duration-200 shadow-xs hover:shadow cursor-pointer">
+                                View Details <i class="bx bx-right-arrow-alt text-lg"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- 5. Limca -->
+                    <article
+                        class="group bg-white rounded-2xl border border-gray-200/90 hover:border-primary/40 hover:shadow-2xl hover:shadow-red-500/10 transition-all duration-300 overflow-hidden flex flex-col justify-between">
+                        <div>
+                            <!-- Product Image -->
+                            <div
+                                class="relative aspect-square w-full overflow-hidden bg-gradient-to-b from-lime-50 to-emerald-50 flex items-center justify-center">
+                                <img src="assets/images/product/limca.png" alt="Limca Fresh Lemoni"
+                                    class="h-full w-auto object-contain group-hover:scale-105 transition-transform duration-500 drop-shadow-md"
+                                    loading="lazy" />
+                                <span
+                                    class="absolute top-3 left-3 bg-lime-700 text-white text-[11px] font-semibold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">
+                                    Cloudy Lemon
+                                </span>
+                            </div>
+
+                            <!-- Content -->
+                            <div class="p-6">
+                                <h3
+                                    class="font-heading text-2xl lg:text-3xl font-bold uppercase text-slate-900 group-hover:text-primary transition-colors">
+                                    Limca
+                                </h3>
+                                <p class="text-xs font-semibold uppercase tracking-wider text-lime-700 mt-1">
+                                    Fresh Lemoni Zest • Ultimate Thirst Quencher
+                                </p>
+                                <p class="mt-3 text-sm text-gray-600 leading-relaxed font-light">
+                                    India’s legendary cloudy lemon beverage known for its sharp citrus punch and
+                                    invigorating carbonation that restores vitality and quenches deep thirst instantly.
+                                </p>
+
+                                <!-- Available Containers -->
+                                <div class="mt-5 pt-4 border-t border-gray-100 space-y-3">
+                                    <div class="flex items-center justify-between">
+                                        <p
+                                            class="text-xs font-semibold uppercase tracking-wider text-slate-700 flex items-center gap-1.5">
+                                            <i class="bx bx-package text-primary text-base"></i> Available Containers
+                                        </p>
+                                        <span class="text-[11px] font-medium text-gray-400">Formats &amp; Sizes</span>
+                                    </div>
+
+                                    <!-- Container format icons -->
+                                    <div class="grid grid-cols-3 gap-2 text-center">
+                                        <div class="bg-gray-50 rounded-lg p-2 border border-gray-100">
+                                            <i class="bx bx-wine text-primary text-base"></i>
+                                            <p class="text-[11px] font-bold text-gray-800 uppercase mt-0.5">Glass (RGB)
+                                            </p>
+                                            <p class="text-[10px] text-gray-500 font-medium">200ml, 300ml</p>
+                                        </div>
+                                        <div class="bg-gray-50 rounded-lg p-2 border border-gray-100">
+                                            <i class="bx bx-cylinder text-primary text-base"></i>
+                                            <p class="text-[11px] font-bold text-gray-800 uppercase mt-0.5">Can</p>
+                                            <p class="text-[10px] text-gray-500 font-medium">180ml, 300ml</p>
+                                        </div>
+                                        <div class="bg-gray-50 rounded-lg p-2 border border-gray-100">
+                                            <i class="bx bx-droplet text-primary text-base"></i>
+                                            <p class="text-[11px] font-bold text-gray-800 uppercase mt-0.5">PET Bottle
+                                            </p>
+                                            <p class="text-[10px] text-gray-500 font-medium">250ml - 2L</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Container pack sizes pills -->
+                                    <div class="flex flex-wrap gap-1.5 pt-1">
+                                        <span
+                                            class="text-[11px] bg-lime-50 text-lime-800 px-2 py-0.5 rounded-full font-medium border border-lime-200">200ml
+                                            RGB</span>
+                                        <span
+                                            class="text-[11px] bg-lime-50 text-lime-800 px-2 py-0.5 rounded-full font-medium border border-lime-200">300ml
+                                            RGB</span>
+                                        <span
+                                            class="text-[11px] bg-lime-50 text-lime-800 px-2 py-0.5 rounded-full font-medium border border-lime-200">180ml
+                                            Can</span>
+                                        <span
+                                            class="text-[11px] bg-lime-50 text-lime-800 px-2 py-0.5 rounded-full font-medium border border-lime-200">300ml
+                                            Can</span>
+                                        <span
+                                            class="text-[11px] bg-lime-50 text-lime-800 px-2 py-0.5 rounded-full font-medium border border-lime-200">250ml
+                                            PET</span>
+                                        <span
+                                            class="text-[11px] bg-lime-50 text-lime-800 px-2 py-0.5 rounded-full font-medium border border-lime-200">600ml
+                                            PET</span>
+                                        <span
+                                            class="text-[11px] bg-lime-50 text-lime-800 px-2 py-0.5 rounded-full font-medium border border-lime-200">1.25L
+                                            PET</span>
+                                        <span
+                                            class="text-[11px] bg-lime-50 text-lime-800 px-2 py-0.5 rounded-full font-medium border border-lime-200">2L
+                                            PET</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card Footer Button -->
+                        <div class="p-6 pt-0">
+                            <button type="button" data-product="limca"
+                                class="open-product-modal w-full inline-flex items-center justify-center gap-2 rounded-lg bg-gray-50 border border-gray-200 group-hover:bg-primary group-hover:border-primary group-hover:text-white px-5 py-3 font-heading text-sm font-semibold uppercase text-gray-800 transition-all duration-200 shadow-xs hover:shadow cursor-pointer">
+                                View Details <i class="bx bx-right-arrow-alt text-lg"></i>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Commercial Distribution CTA -->
+                <div
+                    class="mt-14 rounded-2xl bg-gradient-to-r from-red-600 via-primary to-[#9E201D] p-8 lg:p-12 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div class="space-y-2 text-center md:text-left">
+                        <span
+                            class="inline-block bg-white/20 backdrop-blur-xs text-white text-xs font-semibold uppercase px-3 py-1 rounded-full">
+                            Retail &amp; Distribution
+                        </span>
+                        <h3 class="font-heading text-2xl sm:text-3xl lg:text-4xl uppercase font-bold text-white">
+                            Partner with DBPL for Beverage Supply
+                        </h3>
+                        <p class="text-white/80 text-sm sm:text-base font-light max-w-2xl">
+                            We supply retailers, eateries, supermarkets, and corporate event partners across Kolkata and
+                            West Bengal with uninterrupted beverage stock, refrigeration, and distributor support.
+                        </p>
+                    </div>
+                    <a href="contact-us.html"
+                        class="shrink-0 inline-flex items-center gap-2 rounded-lg bg-white text-primary hover:bg-gray-100 px-6 py-3.5 font-heading text-sm font-bold uppercase tracking-wider transition shadow-md">
+                        Contact Distribution Team <i class="bx bx-right-arrow-alt text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- // Products Section -->
+
+        <!-- Product Details Modal -->
+        <div id="product-modal"
+            class="fixed inset-0 z-50 invisible opacity-0 transition-all duration-300 flex items-center justify-center p-4 sm:p-6"
+            role="dialog" aria-modal="true" aria-hidden="true">
+            <!-- Backdrop -->
+            <div id="modal-backdrop"
+                class="fixed inset-0 bg-gray-900/60 backdrop-blur-xs transition-opacity duration-300"></div>
+
+            <!-- Modal Dialog Content -->
+            <div id="modal-dialog"
+                class="relative bg-white rounded-2xl max-w-2xl w-full shadow-2xl overflow-hidden transform scale-95 transition-all duration-300 z-10 max-h-[90vh] flex flex-col">
+                <!-- Modal Header -->
+                <div class="flex items-center justify-between px-6 py-4 border-b border-gray-100 bg-gray-50/70">
+                    <div class="flex items-center gap-3">
+                        <span id="modal-badge"
+                            class="bg-primary text-white text-[11px] font-semibold uppercase tracking-wider px-2.5 py-0.5 rounded-full shadow-xs"></span>
+                        <h3 id="modal-title" class="font-heading text-2xl font-bold uppercase text-gray-900"></h3>
+                    </div>
+                    <button id="modal-close" type="button"
+                        class="text-gray-400 hover:text-gray-700 p-1.5 rounded-full hover:bg-gray-200/60 transition cursor-pointer"
+                        aria-label="Close modal">
+                        <i class="bx bx-x text-2xl leading-none"></i>
+                    </button>
+                </div>
+
+                <!-- Modal Body (Scrollable) -->
+                <div class="p-6 overflow-y-auto space-y-6">
+                    <div class="flex flex-col sm:flex-row gap-6 items-center sm:items-start">
+                        <div
+                            class="w-full sm:w-48 h-48 rounded-xl overflow-hidden bg-gray-100 shrink-0 flex items-center justify-center">
+                            <img id="modal-image" src="" alt="" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="flex-1 space-y-2 text-center sm:text-left">
+                            <p id="modal-tagline" class="text-xs font-semibold uppercase tracking-wider text-primary">
+                            </p>
+                            <p id="modal-description" class="text-sm text-gray-600 font-light leading-relaxed"></p>
+                            <div class="pt-2">
+                                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Quality
+                                    Assurance:</span>
+                                <p class="text-xs text-gray-600 mt-0.5">Bottled under the rigorous FSSC 22000 and
+                                    Coca-Cola Global Quality standards at DBPL Kolkata facilities.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Containers Breakdown -->
+                    <div class="space-y-3 pt-2 border-t border-gray-100">
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-gray-700 flex items-center gap-1.5">
+                            <i class="bx bx-package text-primary text-base"></i> Complete Container &amp; Packaging
+                            Formats
+                        </h4>
+                        <div id="modal-containers" class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                            <!-- Populated dynamically via JS -->
+                        </div>
+                    </div>
+
+                    <!-- Nutritional Information Table -->
+                    <div class="space-y-2 pt-2 border-t border-gray-100">
+                        <div class="flex items-center justify-between">
+                            <h4
+                                class="text-xs font-bold uppercase tracking-wider text-gray-700 flex items-center gap-1.5">
+                                <i class="bx bx-heart text-primary text-base"></i> Nutritional Information
+                            </h4>
+                            <span class="text-[11px] text-gray-400">Typical values per 100ml</span>
+                        </div>
+                        <div class="overflow-hidden rounded-xl border border-gray-200/80">
+                            <table class="w-full text-left text-xs">
+                                <thead class="bg-gray-50 text-gray-700 font-semibold border-b border-gray-200">
+                                    <tr>
+                                        <th class="px-4 py-2.5">Nutrient</th>
+                                        <th class="px-4 py-2.5">Value (per 100ml)</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="modal-nutrition" class="divide-y divide-gray-100 text-gray-600">
+                                    <!-- Populated dynamically via JS -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Footer -->
+                <div class="px-6 py-4 border-t border-gray-100 bg-gray-50 flex items-center justify-between gap-4">
+                    <p class="text-xs text-gray-500 font-light hidden sm:block">Diamond Beverages (P) Limited Authorized
+                        Bottler</p>
+                    <div class="flex items-center gap-3 w-full sm:w-auto justify-end">
+                        <button type="button" id="modal-close-btn"
+                            class="px-4 py-2 rounded-lg border border-gray-300 text-gray-700 text-xs font-semibold uppercase hover:bg-gray-100 transition cursor-pointer">
+                            Close
+                        </button>
+                        <a href="contact-us.html"
+                            class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-primary text-white text-xs font-semibold uppercase hover:bg-red-700 transition">
+                            Inquire Product <i class="bx bx-right-arrow-alt text-base"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer id="contact" class="bg-[#383838] text-white px-4 py-16 lg:px-0 lg:py-24">
+        <div class="mx-auto max-w-7xl">
+            <div class="grid gap-6 lg:gap-16 sm:grid-cols-2 lg:grid-cols-4">
+                <div class="space-y-3">
+                    <h2 class="flex items-center gap-2 font-heading text-2xl">
+                        <i class="bx bx-buildings text-xl" aria-hidden="true"></i> Our Offices
+                    </h2>
+                    <p class="font-light leading-5 text-white/60">
+                        Visit our Kolkata office or get in touch with our team for assistance.
+                    </p>
+                    <a class="inline-block text-xs uppercase hover:text-primary"
+                        href="https://maps.google.com/?q=Diamond+Beverages+Kolkata">
+                        Locate us
+                    </a>
+                </div>
+                <div class="space-y-3">
+                    <h2 class="flex items-center gap-2 font-heading text-2xl">
+                        <i class="bx bx-phone text-xl" aria-hidden="true"></i> Call Support
+                    </h2>
+                    <p class="font-light leading-5 text-white/60">
+                        Have a question? Call our team—we're happy to help.
+                    </p>
+                    <a class="mt-2 inline-block uppercase hover:text-primary" href="tel:+913324205300">
+                        033 2420 5300
+                    </a>
+                </div>
+                <div class="space-y-3">
+                    <h2 class="flex items-center gap-2 font-heading text-2xl">
+                        <i class="bx bx-envelope text-xl" aria-hidden="true"></i> Write to us
+                    </h2>
+                    <p class="font-light leading-5 text-white/60">
+                        Send us your enquiry, feedback, or suggestion.
+                    </p>
+                    <a class="mt-2 inline-block hover:text-primary" href="mailto:helpline@diamondbev.in">
+                        helpline@diamondbev.in
+                    </a>
+                </div>
+                <a class="rounded-lg bg-primary p-4 transition hover:bg-red-700 space-y-3"
+                    href="mailto:helpline@diamondbev.in">
+                    <h2 class="flex items-center gap-2 font-heading text-2xl">
+                        <i class="bx bx-send text-xl" aria-hidden="true"></i> Connect with us
+                    </h2>
+                    <p class="font-light leading-5 text-white/75">We're always looking to connect with those who share
+                        an interest
+                        in our products and brands.</p>
+                </a>
+            </div>
+
+            <div class="mt-10 text-center">
+                <a class="inline-block font-heading text-4xl font-extrabold tracking-tight text-primary" href="#top"
+                    aria-label="DBPL home">
+                    <img src="assets/images/logo.png" alt="DBPL Logo" class="mx-auto h-16 w-auto" />
+                </a>
+                <div class="mx-auto mt-1 h-1 w-16 rounded-full bg-green-500"></div>
+                <p class="mx-auto mt-4 max-w-2xl font-light leading-6 text-white/70">Coca-Cola India, is one of the
+                    country’s
+                    leading beverage companies, offering a range of healthy, safe, high quality, refreshing beverage
+                    options to
+                    consumers</p>
+            </div>
+
+            <nav class="mt-7 flex flex-wrap justify-center gap-x-5 gap-y-3 text-xs font-light uppercase text-white/80"
+                aria-label="Footer navigation">
+                <a class="hover:text-primary" href="#top">Home</a>
+                <a class="hover:text-primary" href="#about">About us</a>
+                <a class="hover:text-primary" href="#brands">Our products</a>
+                <a class="hover:text-primary" href="#brands">Career</a>
+                <a class="hover:text-primary" href="#blog">Events</a>
+                <a class="hover:text-primary" href="#contact">Contact us</a>
+                <a class="hover:text-primary" href="#contact">Privacy Policy</a>
+                <a class="hover:text-primary" href="#contact">Terms & Condition</a>
+            </nav>
+
+            <p class="mt-5 text-center text-xs text-white/50">
+                Copyright &copy; 2026 Diamond Beverages (P) Limited. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
+    <script src="assets/js/menu.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+</body>
+
+</html>
